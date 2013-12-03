@@ -14,6 +14,11 @@ public class BisiestoServlet extends HttpServlet {
                 String parametro = request.getParameter("anio");
                 Bisiesto bs = new Bisiesto();
                 int anio = new Integer(parametro);
-                response.getWriter().println(bs.imprimir(anio));
+                boolean esBisiesto = bs.esBisiesto(anio);
+                if (esBisiesto==true){
+                	response.getWriter().println("Es bisiesto");
+            	}else{
+            		response.getWriter().println("No es bisiesto");
+            	}
         }
 }

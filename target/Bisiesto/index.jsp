@@ -1,5 +1,5 @@
-<html>
-<body>
-<h2>Hello World!</h2>
-</body>
-</html>
+<h1>Bisiesto</h1>
+<form action="BisiestoServlet">
+        Anio: <input type="text" name="anio"><br>
+        <input type="submit" value="Enviar">
+</form>

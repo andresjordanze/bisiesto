@@ -9,4 +9,16 @@ public class Bisiesto {
                 return resultado;
         }
 
+        public boolean esBisiesto(int anio){
+        if(anio%4 == 0){
+            if(anio%100 == 0){
+                return false;
+            }else{
+                return true;
+            }
+        }else{
+            return false;
+        }
+    }
+
 }

@@ -21,5 +21,16 @@ public class BisiestoTest {
     public void esBisiesto() {
         assertEquals(true,bs.esBisiesto(4));//es bisiesto
         assertEquals(false,bs.esBisiesto(100));//no es bisiesto
+        assertEquals(true,bs.esBisiesto(400));//es bisiesto
     }
+
+/*
+    public void t() {
+        YearUtilities instance = new YearUtilities();
+        assertTrue(instance.isLeap(4));//es bisiesto
+        assertFalse(instance.isLeap(100));//no es bisiesto
+        assertTrue(instance.isLeap(400));//es bisiesto
+        assertFalse(instance.isLeap(2011));//no es bisiesto
+        assertTrue(instance.isLeap(2012));//es bisiesto
+    }*/
 }

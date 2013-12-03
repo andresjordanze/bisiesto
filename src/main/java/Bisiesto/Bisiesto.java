@@ -12,7 +12,11 @@ public class Bisiesto {
         public boolean esBisiesto(int anio){
         if(anio%4 == 0){
             if(anio%100 == 0){
-                return false;
+                if(anio%400 == 0){
+                    return true;
+                }else{
+                    return false;
+                }
             }else{
                 return true;
             }
